@@ -3,3 +3,6 @@
 
 # Git
 node_modules/
+
+# Parcel
+.cache
