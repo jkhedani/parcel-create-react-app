@@ -1,0 +1,5 @@
+# macOS/OSX
+.DS_Store
+
+# Git
+node_modules/
