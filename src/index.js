@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 // TODO: Import CSS
 
+console.log(process.env.PORT)
+
 const App = () => (
 	<div className="App">
 		<h1>I love you, Justin!</h1>
