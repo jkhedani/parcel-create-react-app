@@ -6,7 +6,8 @@ TODO:
 	√ Add React
 	√ Add ES6 Compiler
 	- Add hot reloading
-	- Add SCSS parser
+	√ Add SCSS parser
+	- Code splitting (https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/code-splitting.md, https://reactjs.org/docs/code-splitting.html)
 
 ## Environmental Variables & Configuration
 
