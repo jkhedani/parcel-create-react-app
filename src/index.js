@@ -1,16 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// Setup based on HMR
+// https://github.com/gaearon/react-hot-loader
+import React from "react"
+import { render } from "react-dom"
+import App from "./routes/App"
 
-// Styles
-import "./styles"
+function renderApp() {
+  const App = require('./routes/App').default
+  render(<App />, root)
+}
 
-const App = () => (
-	<div className="App">
-		<h1>I love you, Justin!</h1>
-	</div>
-)
+renderApp()
 
-ReactDOM.render(
-	<App />, 
-	document.getElementById("root")
-)
+module.hot.accept(renderApp)
+
+// This seems to work with hot module reload as well...
+// import ReactDOM from "react-dom"
+// ReactDOM.render( 
+//   <App />,
+//   document.getElementById("root") 
+// )

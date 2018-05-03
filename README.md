@@ -5,7 +5,12 @@ using Parcel.
 TODO:
 	√ Add React
 	√ Add ES6 Compiler
-	- Add hot reloading
+	- React Dev Utils
+	- ESLint (config-react-app)
+	- CSS Autoprefixer
+	- Testing (Jest)
+	- Add hot reloading (https://www.youtube.com/watch?v=xsSnOQynTHs)
+	- Fix "Uncaught TypeError: Cannot read property 'accept' of undefined" in production build for hot reloading (maybe call hot reloading only in dev explicitly?)
 	√ Add SCSS parser
 	- Code splitting (https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/code-splitting.md, https://reactjs.org/docs/code-splitting.html)
 
@@ -32,12 +37,8 @@ NOTE: If you want to change your `.env` configuration without committing changes
 
 ## Production
 
-1. Configure server by creating a `.env.production` file in root directory. See
-the `.env` file for all required options.
-
-2. Build for production:
-
+	$ ssh user@production.com
+	$ nano .env.production
 	$ yarn build
-
-3. Restart server!
+	$ serve -s dist/
 
