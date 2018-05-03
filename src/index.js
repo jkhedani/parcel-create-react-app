@@ -1,8 +1,14 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "./routes/App"
+// Styles
+import "./styles"
 
-// This seems to work with hot module reload as well...
+// Render app
+const App = () => (
+  <div>
+	  <h1>Hello, Parcel.</h1>
+  </div>
+)
 ReactDOM.render( 
   <App />,
   document.getElementById("root") 
