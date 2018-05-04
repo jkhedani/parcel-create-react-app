@@ -1,12 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
-// Styles
 import "./styles"
 
 // Render app
 const App = () => (
   <div>
-	  <h1>Hello, Parcel.</h1>
+		<h1>Hello, Parcel.</h1>
   </div>
 )
 ReactDOM.render( 
