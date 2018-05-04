@@ -5,7 +5,6 @@ using Parcel.
 TODO:
 	√ Add React
 	√ Add ES6 Compiler
-	- React Dev Utils
 	√ ESLint (config-react-app)
 	- CSS Autoprefixer
 	- Testing (Jest)
@@ -26,15 +25,16 @@ NOTE: If you want to change your `.env` configuration without committing changes
 
 ## Local Development
 
-	$ yarn start
 	$ cat .env > .env.local
-	$ 
+	$ nano .env.local
+	$ yarn start
 
 ## Production
 
-1. Clone and
+1. Clone and configure 
 
 	$ git clone 
+	$ cat .env > .env.production
 	$ nano .env.production
 
 2. Build and serve:
