@@ -6,15 +6,14 @@ TODO:
 	√ Add React
 	√ Add ES6 Compiler
 	√ ESLint (config-react-app)
-	- CSS Autoprefixer
-	- Testing (Jest)
+	√ CSS Autoprefixer
 	√ Add SCSS parser
-	- Code splitting (https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/guides/code-splitting.md, https://reactjs.org/docs/code-splitting.html)
+	√ Testing (Jest)
+	√ Flow
 
 ## Development
 
 	$ yarn start
-
 
 
 NOTE: If you want to change your `.env` configuration without committing changes, simply create a new config with `.env.local` as the name and adjust your settings accordingly.
