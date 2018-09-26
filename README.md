@@ -1,43 +1,29 @@
-# Parcel Bootstrap
-An attempt at trying to replicate the primary features of `create-react-app`
-using Parcel.
+# Parcel Create React App
+@author Justin Hedani, AreaMetrics
 
-TODO:
-	√ Add React
-	√ Add ES6 Compiler
-	√ ESLint (config-react-app)
-	√ CSS Autoprefixer
-	√ Add SCSS parser
-	√ Testing (Jest)
-	√ Flow
-
-## Development
-
-	$ yarn start
-
-
-NOTE: If you want to change your `.env` configuration without committing changes, simply create a new config with `.env.local` as the name and adjust your settings accordingly.
-
-## Setup
-
+## Installation
+1. Install the NPM packages:
+		
 	$ yarn install
 
-## Local Development
+## Styling
+NOTE: We are using (SASS/SCSS)[https://sass-lang.com/guide]
+1. Create or edit an `.scss` file in `src/lib/styles`.
+2. Styles will auto-compile when you run the local server but if you want to only compile SASS, simply run:
+	
+	$ yarn build-css
 
-	$ cat .env > .env.local
-	$ nano .env.local
+## Local Development
+1. Start the webserver, preprocessors, linters, etc.:
+
+	$ yarn
 	$ yarn start
 
-## Production
+## Environmental Variables
 
-1. Clone and configure 
-
-	$ git clone 
-	$ cat .env > .env.production
-	$ nano .env.production
-
-2. Build and serve:
-
-	$ yarn build
-	$ serve -s dist/
-
+The `create-react-app` script/package can't deal with simple things like making the changing of environmental
+variables and deployment locations easy so: 
+	
+	a) Modify .env.local for local env adjustments
+	b) edit the package the JSON when building for staging or production
+	c) Use a Parcel bootstrap for first
