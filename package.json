@@ -52,7 +52,8 @@
     "jest": "^23.1.0",
     "jsdoc": "^3.5.5",
     "react-test-renderer": "^16.4.1",
-    "typescript": "^3.1.6"
+    "typescript": "^3.1.6",
+    "tslint": "^5.11.0"
   },
   "scripts": {
     "start": "parcel src/index.html",
