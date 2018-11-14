@@ -30,10 +30,6 @@ class App_Store {
   CreateComparisonColumn(buyerColumnObject) {
     this.BuyerColumns.push(buyerColumnObject)
   }
-  RemoveComparisonColumn(name) {
-    const targetIndex = this.BuyerColumns.findIndex((el) => { return el.name === name })
-    this.BuyerColumns.splice(targetIndex, 1)
-  }
   
 }
 
@@ -45,7 +41,6 @@ decorate(App_Store, {
   Read: action,
   Update: action,
   CreateComparisonColumn: action,
-  RemoveComparisonColumn: action,
 })
 
 export default App_Store;

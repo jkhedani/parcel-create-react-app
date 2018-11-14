@@ -1,5 +1,5 @@
 # Parcel Create React App
-@author Justin Hedani, AreaMetrics
+@author Justin Hedani
 
 ## Development
 	
@@ -8,8 +8,10 @@
 	$ yarn start
 
 ## Deployment
+https://www.npmjs.com/package/serve
 
 	$ yarn build --no-source-maps
+	$ serve -sp 3000 dist/`
 
 ## Styling
 NOTE: We are using (SASS/SCSS)[https://sass-lang.com/guide]
