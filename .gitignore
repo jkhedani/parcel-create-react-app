@@ -4,8 +4,6 @@
 .cache
 dist/
 .env
-.env.local
-.env.production
 
 # macOS/OSX
 .DS_Store
