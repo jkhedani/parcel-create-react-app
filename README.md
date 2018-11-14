@@ -1,10 +1,17 @@
 # Parcel Create React App
-@author Justin Hedani, AreaMetrics
+@author Justin Hedani
 
-## Installation
-1. Install the NPM packages:
-		
-	$ yarn install
+## Development
+	
+	$ cp .env.sample .env
+	$ yarn
+	$ yarn start
+
+## Deployment
+https://www.npmjs.com/package/serve
+
+	$ yarn build --no-source-maps
+	$ serve -sp 3000 dist/`
 
 ## Styling
 NOTE: We are using (SASS/SCSS)[https://sass-lang.com/guide]
@@ -12,12 +19,6 @@ NOTE: We are using (SASS/SCSS)[https://sass-lang.com/guide]
 2. Styles will auto-compile when you run the local server but if you want to only compile SASS, simply run:
 	
 	$ yarn build-css
-
-## Local Development
-1. Start the webserver, preprocessors, linters, etc.:
-
-	$ yarn
-	$ yarn start
 
 ## Environmental Variables
 
