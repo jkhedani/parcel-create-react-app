@@ -2,11 +2,14 @@
 @author Justin Hedani, AreaMetrics
 
 ## Development
-1. Start the webserver, preprocessors, linters, etc.:
-
+	
 	$ cp .env.sample .env
 	$ yarn
 	$ yarn start
+
+## Deployment
+
+	$ yarn build --no-source-maps
 
 ## Styling
 NOTE: We are using (SASS/SCSS)[https://sass-lang.com/guide]
