@@ -57,10 +57,12 @@
   },
   "scripts": {
     "start": "parcel src/index.html",
-    "start-docker": "docker run -p 3000:3000 houston",
-    "build": "parcel build src/index.html",
-    "build-docker": "docker build -t houston .",
-    "get-docs": "jsdoc -r src -d docs && cd ./docs/ && open index.html",
+    "start-docker": "docker run -p 3000:3000 parcel-bootstrap-ts",
+    "ssh": "ssh ec2-user@ec2-54-200-191-237.us-west-2.compute.amazonaws.com",
+    "build": "parcel build src/index.html --no-source-maps",
+    "build-docker": "docker build -t parcel-bootstrap-ts .",
+    "deploy": "",
+    "docs": "jsdoc -r src -d docs && cd ./docs/ && open index.html",
     "test": "jest"
   }
 }
