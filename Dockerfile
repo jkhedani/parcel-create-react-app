@@ -1,15 +1,11 @@
-# You should always specify a full version here to ensure all of your developers
-# are running the same version of Node.
-FROM node:9.5 as build-stage
+# Copy build over form previous step
+FROM node:10.13.0-alpine
+WORKDIR /home/node/
 
-# Override the base log level (info).
-ENV NPM_CONFIG_LOGLEVEL warn
+# Copy build from local dir
+COPY ./dist /home/node/dist 
 
-# Copy all local files into the image.
-COPY . .
-RUN yarn build
-
-# Install and configure `serve`.
-RUN npm install -g pm2
-CMD pm2 serve dist/ 3000
+# Install serve and expose!
+RUN yarn global add serve
+CMD ["serve", "-s", "-l", "3000", "dist/"]
 EXPOSE 3000
