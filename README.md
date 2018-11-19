@@ -1,26 +1,28 @@
 # Parcel Create React App
+An opinonated setup of Parcel that works right out of the box! (Typescript + MobX)
 @author Justin Hedani
 
 ## Development
-	
+Develop projects locally with Parcel's dev server and HMR:	
+
 	$ cp .env.sample .env
 	$ yarn
 	$ yarn start
 
-## Deployment
-
-	$ yarn build
-	$ yarn docker:build
-	$ yarn docker:tag
-	$ yarn docker:deploy
-
 ## Environmental Variables
-
 The `create-react-app` script/package can't deal with simple things like making the changing of environmental variables and deployment locations easy so: 
 	
 	a) Modify .env.local for local env adjustments
 	b) edit the package the JSON when building for staging or production
 	c) Use a Parcel bootstrap for first
+
+## Deployment
+Deploy your static bundle using a Docker container:
+
+	$ yarn build
+	$ yarn docker:build
+	$ yarn docker:tag
+	$ yarn docker:deploy
 
 ## Deployment (AWS)
 https://www.npmjs.com/package/serve
