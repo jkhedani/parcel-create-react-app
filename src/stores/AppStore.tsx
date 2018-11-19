@@ -7,17 +7,7 @@ class App_Store {
 
   /////////////// Observable ///////////////
   
-  BuyerColumns = []
-
-  ///////////////// Models /////////////////
-
-  ModelAppConfig = {
-    totalPoints: 0,
-  }
-  ModelBuyerColumn = {
-    name: "",
-    columnType: ""
-  }
+  AppData = []
 
   ///////////////// Drivers /////////////////
 
@@ -25,22 +15,13 @@ class App_Store {
   Read() {}
   Update() {}
 
-  ///////////////// Use Cases /////////////////
-
-  CreateComparisonColumn(buyerColumnObject) {
-    this.BuyerColumns.push(buyerColumnObject)
-  }
-  
 }
 
 decorate(App_Store, {
-  ModelAppConfig: observable,
-  ModelBuyerColumn: observable,
-  BuyerColumns: observable,
+  AppData: observable,
   Create: action,
   Read: action,
   Update: action,
-  CreateComparisonColumn: action,
 })
 
 export default App_Store;
