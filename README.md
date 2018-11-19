@@ -10,8 +10,7 @@ An opinionated setup of Parcel that works right out of the box! (Typescript + Mo
 ## Development
 Develop projects locally with Parcel's dev server and HMR:	
 
-	$ git clone https://github.com/jkhedani/parcel-create-react-app.git
-	$ mv parcel-create-react-app my-awesome-proj
+	$ git clone https://github.com/jkhedani/parcel-create-react-app.git my-awesome-proj
 	$ cd my-awesome-proj
 	$ cp .env.sample .env
 	$ yarn
