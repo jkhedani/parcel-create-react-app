@@ -1,5 +1,5 @@
 # Parcel Create React App
-An opinonated setup of Parcel that works right out of the box! (Typescript + MobX)
+An opinionated setup of Parcel that works right out of the box! (Typescript + MobX)
 @author Justin Hedani
 
 ## Development
