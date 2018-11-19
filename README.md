@@ -2,6 +2,12 @@
 An opinionated setup of Parcel that works right out of the box! (Typescript + MobX)
 @author Justin Hedani
 
+## Pre-requisites
+
+	$ yarn global add parcel-bundler
+
+NOTE: If you prefer not to install packages globally, feel free to use the `parcel-binary` included in node_modules. Any `package.json` commands would need to be updated to use the local binary.
+
 ## Development
 Develop projects locally with Parcel's dev server and HMR:	
 
