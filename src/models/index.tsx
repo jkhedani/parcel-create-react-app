@@ -1,4 +1,2 @@
 import Person from "./Person"
-export {
-  Person
-}
+export { Person }

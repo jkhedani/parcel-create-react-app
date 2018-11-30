@@ -1,27 +1,31 @@
 /**
  * Sample MobX Class
  */
-import { action, observable, decorate } from 'mobx';
+import { action, observable, decorate } from "mobx"
 
-class App_Store {
-
+class AppStoreClass {
   /////////////// Observable ///////////////
-  
+
   AppData = []
 
   ///////////////// Drivers /////////////////
 
-  Create() {}
-  Read() {}
-  Update() {}
-
+  Create() {
+    // do something
+  }
+  Read() {
+    // do something
+  }
+  Update() {
+    // do something
+  }
 }
 
-decorate(App_Store, {
+decorate(AppStoreClass, {
   AppData: observable,
   Create: action,
   Read: action,
   Update: action,
 })
 
-export default App_Store;
+export default AppStoreClass
