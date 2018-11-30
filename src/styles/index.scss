@@ -1,18 +1,10 @@
 /**
- * Imports
- */
-@import "bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
-@import "bootstrap-sass/assets/stylesheets/bootstrap";
-@import 'colors';
-
-/**
  * Fonts
  */
 @import url("https://fonts.googleapis.com/css?family=Hind:400,500");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 $hind: "Hind", sans-serif;
 $robotoMono: "Roboto Mono", sans-serif;
-
 
 /**
  * Mixins
@@ -28,4 +20,11 @@ $robotoMono: "Roboto Mono", sans-serif;
   }
 }
 
-
+/**
+ * General
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
