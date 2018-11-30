@@ -57,9 +57,12 @@ https://www.npmjs.com/package/serve
    docker pull 791906567261.dkr.ecr.us-west-2.amazonaws.com/parcel-bootstrap-ts:latest
    docker run -p 80:3000 791906567261.dkr.ecr.us-west-2.amazonaws.com/parcel-bootstrap-ts:latest
 
-## IDE Config
+## IDE Config (VSCode)
 
 _Prettier_
 
-1. [Install Prettier in VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-2. No need to install `tslint-prettier` as it will already be included.
+- Configuration in `.prettierrc` will override editor settings
+
+_TSLint_
+
+- Rules in `tslint.json` will be used
