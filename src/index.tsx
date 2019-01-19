@@ -1,14 +1,15 @@
 import "babel-polyfill"
 import React from "react"
-import ReactDOM from "react-dom"
+import { render } from "react-dom"
 import { Provider } from "mobx-react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import { Home, Login, NoMatch } from "./routes"
 import "./styles/index.scss"
-import * as stores from "./stores"
+import { default as Stores } from "./stores"
 
-const App = () => (
-  <Provider {...stores}>
+// Render app on the page
+render(
+  <Provider {...Stores}>
     <Router>
       <div id="wrapper">
         <Switch>
@@ -18,7 +19,6 @@ const App = () => (
         </Switch>
       </div>
     </Router>
-  </Provider>
+  </Provider>,
+  document.getElementById("root")
 )
-
-ReactDOM.render(<App />, document.getElementById("root"))
