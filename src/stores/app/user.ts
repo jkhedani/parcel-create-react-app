@@ -1,8 +1,8 @@
-interface Person {
+export interface UserI {
   name: string
 }
 
-export default class Student {
+export class User implements UserI {
   fullName: string
   constructor(public name: string) {
     this.fullName = name

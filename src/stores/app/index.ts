@@ -2,13 +2,15 @@
  * Sample MobX Class
  */
 import { action, observable, decorate } from "mobx"
+import Stores from "../root"
 
-class AppStoreClass {
-  /////////////// Observable ///////////////
+class AppStore {
+  Stores: Stores
+  AppData: string[] = []
 
-  AppData = []
-
-  ///////////////// Drivers /////////////////
+  constructor(rootStore) {
+    this.Stores = rootStore
+  }
 
   Create() {
     // do something
@@ -21,11 +23,11 @@ class AppStoreClass {
   }
 }
 
-decorate(AppStoreClass, {
+decorate(AppStore, {
   AppData: observable,
   Create: action,
   Read: action,
   Update: action,
 })
 
-export default AppStoreClass
+export default AppStore

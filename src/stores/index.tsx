@@ -1,6 +1,9 @@
-import AppStoreClass from "./AppStore"
+import Stores from "./root"
 
-// Instantiate store classes for use
-const AppStore = new AppStoreClass()
-
-export { AppStore }
+// Initialize classes here to prevent hot module
+// reloading from re-initializing stores
+// Shared context super store:
+// https://mobx.js.org/best/store.html#combining-multiple-stores
+export default {
+  Stores: new Stores(),
+}
