@@ -14,10 +14,6 @@ src/**/*.css
 # dependencies
 node_modules/
 
-# documentation (build your own, please)
-docs/
-out/
-
 # testing
 /coverage
 
